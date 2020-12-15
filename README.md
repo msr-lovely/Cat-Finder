@@ -1,5 +1,5 @@
 <p align="center">
-![Cat Finder](/static/icon.png) 
+<img src="/static/icon.png" />
 </p>
 
 # Cat Finder
