@@ -1,6 +1,6 @@
 <template>
 <div class="flex justify-center text-gray-700">
-  <div v-if="breed.name" class="sm:flex sm:items-start">
+  <div v-if="breed" class="sm:flex sm:items-start">
     <div v-if="images" class="flex-shrink-0 mx-auto sm:ml-0 sm:mr-6 sm:w-1/3 w-full mb-8">
       <LazyImage :src="featured_image.url" class="mb-4 rounded-xl" :lazy="false" />
 
@@ -78,39 +78,11 @@ export default {
     Carousel,
     Slide
   },
-  async asyncData({ route, $axios }) {
-    const breed = await $axios.$get(
-      'breeds/search', 
-      {
-        params: {
-          q: decodeURI(route.query.name)
-        }
-      }
-    );
-    let images = await $axios.$get(
-      'images/search', 
-      {
-        params: {
-          size: 'med',
-          limit: 10,
-          breed_id: breed[0].id
-        }
-      }
-    );
-    images.map(data => {
-      return {
-        id: data.id,
-        url: data.url
-      }
-    });
-    return { 
-      breed: breed[0], 
-      featured_image: images[0],
-      images: images
-    };
-  },
   data() {
     return {
+      breed: {},
+      featured_image: {},
+      images: [],
       skills: ['indoor', 'lap', 'adaptability', 'affection_level', 'child_friendly', 'cat_friendly', 'dog_friendly', 'energy_level', 'grooming', 'health_issues', 'intelligence', 'shedding_level', 'social_needs', 'stranger_friendly', 'vocalisation', 'bidability', 'experimental', 'hairless', 'rare', 'hypoallergenic']
     }
   },
@@ -120,7 +92,44 @@ export default {
         id: dataset.id,
         url: dataset.url,
       };
+    },
+    async loadData(newName) {
+      let breed = await this.$axios.$get(
+        'breeds/search', 
+        {
+          params: {
+            q: decodeURI(newName ?? this.$route.query.name)
+          }
+        }
+      );
+      this.breed = breed[0];
+      console.log(this.breed, breed);
+      let images = await this.$axios.$get(
+        'images/search', 
+        {
+          params: {
+            size: 'med',
+            limit: 10,
+            breed_id: breed[0].id
+          }
+        }
+      );
+      this.images = images.map(data => {
+        return {
+          id: data.id,
+          url: data.url
+        }
+      });
+
+      this.featured_image = images[0];
     }
+  },
+  async mounted() {
+    this.loadData();
+
+    this.$nuxt.$on('refresh_breed_page', name => {
+      this.loadData(name);
+    })
   }
 }
 </script>

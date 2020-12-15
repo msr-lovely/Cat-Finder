@@ -1,4 +1,4 @@
-# lovelycats
+# Cat Finder
 
 ## Build Setup
 

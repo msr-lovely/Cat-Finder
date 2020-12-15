@@ -1,7 +1,6 @@
 <template>
     <div class="relative sm:py-0 py-3 text-sm text-gray-700">
       <vue-autosuggest
-        v-if="$store.state.breed.list.length > 0"
         v-model="query"
         :suggestions="filteredOptions"
         :input-props="{
@@ -9,11 +8,11 @@
           placeholder:'Search breed name (ex: Abyssinian, Bengal, ...)', 
           class: 'focus:ring-indigo-500 focus:border-indigo-500 border border-gray-400 px-2 py-2 w-full rounded-md block'
           }"
+        @focus="focusMe"
         @selected="onSelected"
-        :get-suggestion-value="getSuggestionValue"
       >  
         <div slot-scope="{suggestion}">
-          <div>{{suggestion.item.name}}</div>
+          <div>{{suggestion.item}}</div>
         </div>
       </vue-autosuggest>
     </div>
@@ -21,6 +20,7 @@
 
 
 <script>
+var breeds;
 import { VueAutosuggest } from 'vue-autosuggest'
 export default {
   components: {
@@ -29,15 +29,17 @@ export default {
   data() {
     return {
       query: "",
+      breeds: [],
       skills: ['indoor', 'lap', 'adaptability', 'affection_level', 'child_friendly', 'cat_friendly', 'dog_friendly', 'energy_level', 'grooming', 'health_issues', 'intelligence', 'shedding_level', 'social_needs', 'stranger_friendly', 'vocalisation', 'bidability', 'experimental', 'hairless', 'rare', 'hypoallergenic']
     }
   },
   computed: {
     filteredOptions() {
       let data = [];
-      if (this.query != "") {
-        data = this.$store.state.breed.list.filter(option => {
-          return option.name.toLowerCase().indexOf(this.query.toLowerCase()) > -1;
+      if (this.query != "" && breeds.length > 0) {
+        // console.log(breeds);
+        data = breeds.filter(option => {
+          return option.toLowerCase().indexOf(this.query.toLowerCase()) > -1;
         });
         data = data.slice(0, 5);
       }
@@ -46,25 +48,38 @@ export default {
     }
   },
   methods: {
-    onSelected(item) {
-        console.log("selected: ", item);
-        this.$router.push({ 
-          name: 'breed',
-          query: {name: encodeURI(item.item.name)}
+    focusMe() {
+      // load the data (name, url, thumbnail?)
+      breeds = sessionStorage.getItem('cat_breeds');
+      if (breeds == null) {
+        // load from the breeds list
+        this.$axios.get('breeds')
+        .then(({data}) => {
+          breeds = data.map(data=>data.name);
+          sessionStorage.setItem('cat_breeds', JSON.stringify(breeds));
         });
+      } else {
+        breeds = JSON.parse(breeds);
+      }
     },
-    getSuggestionValue(suggestion) {
-      return suggestion.item.name;
+    onSelected(item) {
+        // console.log("selected: ", item);
+        let current = {
+          name: this.$router.currentRoute.name,
+          query: this.$router.currentRoute.query
+        };
+        let selected = { 
+          name: 'breed',
+          query: {name: encodeURI(item.item)}
+        };
+        if (current != selected) {
+          this.$router.push(selected);
+          if (current.name == selected.name) {
+            // send event
+            this.$nuxt.$emit('refresh_breed_page', selected.query.name);
+          }
+        }
     }
-  },
-  async mounted() {
-    // console.log("search bar mounted");
-    // let data = await this.$axios.$get('breeds');
-    // this.$store.commit('breed/load', data);
-
-    // this.$nextTick(()=> {
-    //     lazyload();
-    // });
   }
 }
 </script>

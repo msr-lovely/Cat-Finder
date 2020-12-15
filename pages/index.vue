@@ -46,7 +46,6 @@ export default {
             page: this.page,
         },
       }).then(({ data }) => {
-        console.log(data);
         if (data.length) {
           this.page++;
           this.breeds.push(...data);
