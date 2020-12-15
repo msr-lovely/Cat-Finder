@@ -21,7 +21,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 
 
-# Credits
+## Credits
 
 Made with [Nuxt](https://nuxtjs.org).
 
@@ -38,7 +38,7 @@ Free social media icons from: [Simple Icons](http://simpleicons.org).
 ### Backend: Cat Facts API
 https://alexwohlbruck.github.io/cat-facts/
 
-###### Other Links
+### Other Links
 Kitten photo based on emojis:
 http://joshwcomeau.github.io/RequestKittensDocs/public/
 
