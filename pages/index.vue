@@ -1,78 +1,33 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        lovelycats
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+<div>
+    <div class="flex text-gray-700 pb-4 mb-4" :class="i < $store.state.breed.list.length - 1 ? 'border-b border-gray-300' : ''" v-for="(breed, i) in $store.state.breed.list" :key="breed.name">
+        <div class="flex items-start">
+            <NuxtLink :to="{name: 'breed', query: {name: encodeURI(breed.name)}}" v-if="breed.image" class="rounded-md shadow-lg w-24 flex-shrink-0 sm:mr-6 mr-4 overflow-hidden block">
+                <img 
+                    src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" :data-src="breed.image.url" 
+                    class="w-full transition duration-200 ease-in-out transform hover:scale-105 lazyload" 
+                />
+            </NuxtLink>
+            <div class="text-md flex-grow">
+            <NuxtLink :to="{name: 'breed', query: {name: encodeURI(breed.name)}}" class="font-semibold block">
+                {{ breed.name }}
+            </NuxtLink>
+            <p class="text-xs font-semibold text-indigo-500 mb-2">{{ breed.temperament }}</p>
+
+            <!-- Description -->
+            <p class="text-sm text-gray-600 mb-4">{{ breed.description }}</p>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
 </template>
 
 <script>
-export default {}
+export default {
+    mounted() {
+        this.$nextTick(()=> {
+            lazyload();
+        });
+    }
+}
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>

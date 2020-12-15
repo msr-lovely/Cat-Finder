@@ -20,8 +20,18 @@ $ npm run generate
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 
+
+
 ============================================================
-The Cat API - API Key
+cat-facts API
 ============================================================
-42bb2505-b5db-470b-b462-71feb9faeb2b
-Use it as the 'x-api-key' header when making any request to the API, or by adding as a query string paramter e.g. 'api_key=42bb2505-b5db-470b-b462-71feb9faeb2b' More details on authentication.
+https://alexwohlbruck.github.io/cat-facts/
+
+============================================================
+Other Links
+============================================================
+Kitten photo based on emojis:
+http://joshwcomeau.github.io/RequestKittensDocs/public/
+
+Random Cat pics:
+https://aws.random.cat/meow
