@@ -2,7 +2,7 @@
 <img src="/static/icon.png" />
 </p>
 
-# Cat Finder
+# 🔍 Cat Finder
 
 ## Build Setup
 
