@@ -24,10 +24,15 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 # Credits
 
 Made with [Nuxt](https://nuxtjs.org).
+
 Search bar auto-suggest by [vue-autosuggest](https://github.com/darrenjennings/vue-autosuggest).
+
 Breed Carousel by [Vue Carousel](https://github.com/SSENSE/vue-carousel).
+
 Breed List Infinite Loading by [vue-infinite-loading](https://github.com//PeachScript/vue-infinite-loading).
+
 Lazyloading images by [lazysizes](https://github.com/aFarkas/lazysizes).
+
 Free social media icons from: [Simple Icons](http://simpleicons.org).
 
 ## Backend: Cat Facts API
