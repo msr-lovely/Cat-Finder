@@ -1,4 +1,8 @@
-# ![Cat Finder](/static/icon.png) Cat Finder
+<p align="center">
+![Cat Finder](/static/icon.png) 
+</p>
+
+# Cat Finder
 
 ## Build Setup
 
