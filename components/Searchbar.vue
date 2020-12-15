@@ -6,7 +6,7 @@
         :input-props="{
           id:'autosuggest__input', 
           placeholder:'Search breed name (ex: Abyssinian, Bengal, ...)', 
-          class: 'focus:ring-indigo-500 focus:border-indigo-500 border border-gray-400 px-2 py-2 w-full rounded-md block'
+          class: 'focus:border-indigo-500 focus:shadow-logo-indigo transition-color ease-in-out duration-100 border border-gray-400 px-2 py-2 w-full rounded-md block'
           }"
         @focus="focusMe"
         @selected="onSelected"
@@ -92,12 +92,18 @@ export default {
     @apply w-full block;
 }
 #autosuggest-autosuggest__results {
-  @apply absolute z-10 bg-white w-full rounded-md shadow;
+  @apply absolute z-10 bg-white w-full rounded-md shadow-2xl;
 }
 .autosuggest__results-item {
   @apply px-2 py-1 cursor-pointer;
 }
+.autosuggest__results-item > div {
+  @apply transition-transform transform duration-100 ease-in-out;
+}
 .autosuggest__results-item:hover {
   @apply bg-gray-200 pl-3;
+}
+.autosuggest__results-item:hover > div {
+  @apply translate-x-px;
 }
 </style>

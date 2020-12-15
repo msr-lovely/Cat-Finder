@@ -1,6 +1,8 @@
 <template>
 <div>
+  <transition-group tag="div" name="fade-right">
     <div class="flex text-gray-700 pb-4 mb-4" :class="i < breeds.length - 1 ? 'border-b border-gray-300' : ''" v-for="(breed, i) in breeds" :key="breed.name">
+        <!-- enter-active-class="animate__animated animate__animate__fadeInRight" -->
         <div class="flex items-start">
             <!-- Image -->
             <NuxtLink :to="{name: 'breed', query: {name: encodeURI(breed.name)}}" v-if="breed.image" class="rounded-md shadow-lg w-24 flex-shrink-0 sm:mr-6 mr-4 overflow-hidden block">
@@ -21,8 +23,8 @@
             </div>
         </div>
     </div>
-
-    <infinite-loading @infinite="infiniteHandler"></infinite-loading>
+  </transition-group>
+  <infinite-loading @infinite="infiniteHandler"></infinite-loading>
 </div>
 </template>
 
@@ -39,7 +41,7 @@ export default {
       }
   },
   methods: {
-    infiniteHandler($state) {
+    async infiniteHandler($state) {
       this.$axios.get('breeds', {
         params: {
             limit: 5,
@@ -48,8 +50,13 @@ export default {
       }).then(({ data }) => {
         if (data.length) {
           this.page++;
-          this.breeds.push(...data);
-          $state.loaded();
+          let inter = setInterval(()=>{
+            this.breeds.push(data.shift());
+            if (data.length == 0) {
+              $state.loaded();
+              clearInterval(inter);
+            }
+          }, 300);
         } else {
           $state.complete();
         }

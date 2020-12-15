@@ -15,7 +15,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      // { rel: 'stylesheet', href: 'https://unpkg.com/swiper/swiper-bundle.min.css' }
+      // { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/placeholder-loading/dist/css/placeholder-loading.min.css' }
     ],
     script: [
       {
@@ -66,11 +66,14 @@ export default {
 
   publicRuntimeConfig: {
     catApiURL: process.env.CAT_API_URL,
+    myURL: process.env.MY_URL,
     githubURL: process.env.GITHUB_URL,
     twitterURL: process.env.TWITTER_URL,
     linkedinURL: process.env.LINKEDIN_URL,
   },
   privateRuntimeConfig: {
     apiKey: process.env.API_KEY
-  }
+  },
+
+  loading: '~/components/Loading.vue'
 }

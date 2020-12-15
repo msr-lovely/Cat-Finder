@@ -33,7 +33,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - Thumbnails Carousel by [Vue Carousel](https://github.com/SSENSE/vue-carousel).
 - List Infinite Loading by [vue-infinite-loading](https://github.com//PeachScript/vue-infinite-loading).
 - Lazyloading images by [lazysizes](https://github.com/aFarkas/lazysizes).
-- Free social media icons from [Simple Icons](http://simpleicons.org).
+- Free social media icons from [Simple Icons](http://simpleicons.org) and [Hero Icons](https://heroicons.dev).
 
 ### Backend: Cat Facts API
 https://alexwohlbruck.github.io/cat-facts/
