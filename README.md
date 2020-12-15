@@ -22,14 +22,10 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 
 
-============================================================
-cat-facts API
-============================================================
+## cat-facts API
 https://alexwohlbruck.github.io/cat-facts/
 
-============================================================
-Other Links
-============================================================
+## Other Links
 Kitten photo based on emojis:
 http://joshwcomeau.github.io/RequestKittensDocs/public/
 
