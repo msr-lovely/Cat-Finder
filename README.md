@@ -35,10 +35,10 @@ Lazyloading images by [lazysizes](https://github.com/aFarkas/lazysizes).
 
 Free social media icons from: [Simple Icons](http://simpleicons.org).
 
-## Backend: Cat Facts API
+### Backend: Cat Facts API
 https://alexwohlbruck.github.io/cat-facts/
 
-## Other Links
+###### Other Links
 Kitten photo based on emojis:
 http://joshwcomeau.github.io/RequestKittensDocs/public/
 
