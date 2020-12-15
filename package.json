@@ -14,8 +14,11 @@
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/pwa": "^3.0.2",
     "core-js": "^3.6.5",
+    "lazysizes": "^5.2.2",
     "nuxt": "^2.14.6",
-    "vue-autosuggest": "^2.2.0"
+    "vue-autosuggest": "^2.2.0",
+    "vue-carousel": "^0.18.0",
+    "vue-infinite-loading": "^2.4.5"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",

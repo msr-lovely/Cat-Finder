@@ -14,11 +14,12 @@ export default {
       { hid: 'description', name: 'description', content: 'A cat finder frontend project.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // { rel: 'stylesheet', href: 'https://unpkg.com/swiper/swiper-bundle.min.css' }
     ],
     script: [
       {
-        src: 'https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js'
+        // src: 'https://unpkg.com/vue-infinite-loading@^2/dist/vue-infinite-loading.js'
       }
     ],
   },
