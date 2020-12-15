@@ -1,6 +1,4 @@
-![Cat Finder](/static/logo.png)
-
-# Cat Finder
+# ![Cat Finder](/static/icon.png) Cat Finder
 
 ## Build Setup
 
