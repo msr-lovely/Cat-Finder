@@ -103,7 +103,6 @@ export default {
         }
       );
       this.breed = breed[0];
-      console.log(this.breed, breed);
       let images = await this.$axios.$get(
         'images/search', 
         {

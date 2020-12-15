@@ -25,11 +25,13 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 Made with [Nuxt](https://nuxtjs.org).
 
+Cat Icon from [unDraw](https://undraw.co).
+
 Search bar auto-suggest by [vue-autosuggest](https://github.com/darrenjennings/vue-autosuggest).
 
-Breed Carousel by [Vue Carousel](https://github.com/SSENSE/vue-carousel).
+Thumbnails Carousel by [Vue Carousel](https://github.com/SSENSE/vue-carousel).
 
-Breed List Infinite Loading by [vue-infinite-loading](https://github.com//PeachScript/vue-infinite-loading).
+List Infinite Loading by [vue-infinite-loading](https://github.com//PeachScript/vue-infinite-loading).
 
 Lazyloading images by [lazysizes](https://github.com/aFarkas/lazysizes).
 

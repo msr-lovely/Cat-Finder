@@ -65,7 +65,10 @@ export default {
   },
 
   publicRuntimeConfig: {
-    catApiURL: process.env.CAT_API_URL
+    catApiURL: process.env.CAT_API_URL,
+    githubURL: process.env.GITHUB_URL,
+    twitterURL: process.env.TWITTER_URL,
+    linkedinURL: process.env.LINKEDIN_URL,
   },
   privateRuntimeConfig: {
     apiKey: process.env.API_KEY
