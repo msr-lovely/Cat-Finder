@@ -6,20 +6,20 @@
     <div class="text-center relative">
         <!-- BG LEFT -->
         <div class="absolute transform -translate-x-1/2 -translate-y-1/2" style="top:60%; left: 5vw;">
-            <img src="images/bg/BG_L_0.svg" data-rellax-speed="1" class="rellax" />
+            <img src="images/bg/BG_L_0.svg" data-rellax-speed="-1" class="rellax" />
         </div>
         <div class="absolute" style="top:130%; left: 5vw;">
             <img src="images/bg/BG_Particle_0.svg" data-rellax-speed="2" class="rellax" />
         </div>
         <!-- BG RIGHT -->
         <div class="absolute transform translate-x-1/2 -translate-y-1/2" style="top:130%; right: -6vw;">
-            <img src="images/bg/BG_R_0.svg" data-rellax-speed="0" class="rellax" />
+            <img src="images/bg/BG_R_0.svg" data-rellax-speed="-2" class="rellax" />
         </div>
         <div class="absolute transform -translate-y-1/2" style="top:142%; right: -4vw;">
-            <img src="images/bg/BG_R_1.svg" data-rellax-speed="1.5" class="rellax" />
+            <img src="images/bg/BG_R_1.svg" data-rellax-speed="-1" class="rellax" />
         </div>
         <div class="absolute" style="top:133%; right: 20vw;">
-            <img src="images/bg/BG_Particle_1.svg" data-rellax-speed="0.8" class="rellax" />
+            <img src="images/bg/BG_Particle_1.svg" data-rellax-speed="1" class="rellax" />
         </div>
         <div class="absolute" style="top:142%; right: 12vw;">
             <img src="images/bg/BG_Particle_2.svg" data-rellax-speed="2.5" class="rellax" />
@@ -71,7 +71,7 @@
     <container class="relative">
         <!-- BG LEFT -->
         <div class="absolute transform scale-50" style="top:32%; left: 12vw;">
-            <img src="images/bg/BG_L_1.svg" data-rellax-speed="1.2" class="rellax transform rotate-180" />
+            <img src="images/bg/BG_L_1.svg" data-rellax-speed="-1" class="rellax transform rotate-180" />
         </div>
         <div class="absolute transform scale-50 rellax" data-rellax-speed="1.5" style="top:72%; left: 12vw;">
             <img src="images/bg/BG_Particle_0.svg" style="top:58%; left: 3vw; transform: scale(4) rotate(180deg)" />
@@ -80,7 +80,7 @@
             <img src="images/bg/BG_Particle_1.svg" class="transform rotate-180" />
         </div>
         <!-- BG RIGHT -->
-        <div class="absolute rellax" data-rellax-speed="2" style="top:80%; right: -1vw;">
+        <div class="absolute rellax" data-rellax-speed="-1" style="top:60%; right: -1vw;">
             <img src="images/bg/BG_Particle_1.svg" class="transform rotate-90" />
         </div>
         <div class="absolute rellax" data-rellax-speed="3" style="top:135%; right: 5vw;">
@@ -142,8 +142,8 @@
     <!-- Section 4, Contact Me -->
     <container class="relative">
         <!-- BG RIGHT -->
-        <div class="rellax relative" data-rellax-speed="2">
-            <img src="images/bg/BG_R_0.svg" class="absolute" style="top:50vm; right: -55vw; transform: rotate(135deg) translateY(50%)" />
+        <div class="rellax absolute" data-rellax-speed="2" style="top: 1vm; right: -35vw;">
+            <img src="images/bg/BG_R_0.svg" style="transform: rotate(135deg)" />
         </div>
 
         <div class="relative bg-radius-indigo shadow-frontpage rounded-xl sm:flex sm:space-x-4 text-white mb-12 sm:text-left text-center">

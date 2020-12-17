@@ -27,7 +27,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ## TODO
 - [x] ~~Landing Page Contact Me (Link back to melimeli.me)~~
 - [x] ~~Landing Page CSS BG~~
-- [x] Landing Page Parallax
+- [x] ~~Landing Page Parallax~~
 - [ ] Landing Page Scroll Reveal Animation
 - [ ] Landing Page Text Fix
 - [ ] Error Page
