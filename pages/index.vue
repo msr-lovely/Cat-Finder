@@ -121,7 +121,7 @@
                 <img src="images/Me.svg" class="mx-auto h-full" />
             </div>
             <div class="py-16">
-                <h2 class="big-heading mb-6 white">Need a Frontend Developer?</h2>
+                <h2 class="big-heading mb-6 white">Need a Fullstack Developer?</h2>
                 <div>
                     <div class="md:flex md:space-x-4 mb-4">
                         <a class="button white block w-64 text-center md:mb-0 mb-4 sm:mx-0 mx-auto" :href="$config.myURL" target="_blank">View My Resume</a>
