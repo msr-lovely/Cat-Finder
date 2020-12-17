@@ -25,8 +25,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 
 ## TODO
-- [x] Landing Page Contact Me (Link back to melimeli.me)
-- [x] Landing Page CSS BG
+- [x] ~~Landing Page Contact Me (Link back to melimeli.me)~~
+- [x] ~~Landing Page CSS BG~~
 - [ ] Landing Page Parallax
 - [ ] Landing Page Animation
 - [ ] Error Page
@@ -35,7 +35,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ## Credits
 
 - Made with [Nuxt](https://nuxtjs.org).
-- Illustrations from [unDraw](https://undraw.co).
+- Illustrations from [unDraw](https://undraw.co) and [drawkit](https://www.drawkit.io/).
 - Search bar auto-suggest by [vue-autosuggest](https://github.com/darrenjennings/vue-autosuggest).
 - Thumbnails Carousel by [Vue Carousel](https://github.com/SSENSE/vue-carousel).
 - List Infinite Loading by [vue-infinite-loading](https://github.com//PeachScript/vue-infinite-loading).
