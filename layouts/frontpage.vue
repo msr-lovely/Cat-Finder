@@ -13,13 +13,15 @@
 </template>
 
 <style>
+.bg-radius-indigo {
+  background: radial-gradient(98.47% 98.47% at 52% 1.53%, rgba(250, 157, 206, 0.62) 0%, rgba(255, 255, 255, 0) 100%), #6366F1;
+}
 body {
   @apply bg-gray-100;
 }
 #hero {
-  background: radial-gradient(98.47% 98.47% at 52% 1.53%, rgba(250, 157, 206, 0.62) 0%, rgba(255, 255, 255, 0) 100%), #6366F1;
   border-radius: 0 0 100% 100% / 50% 50% 20% 20%;
-  @apply shadow-frontpage;
+  @apply shadow-frontpage bg-radius-indigo;
 }
 .button {
   @apply uppercase rounded-full font-bold px-6 py-2 border text-xs tracking-wider transition-colors duration-100 ease-in-out text-purple-500 border-purple-500;
@@ -44,6 +46,9 @@ body {
 }
 .big-heading {
   @apply text-gray-700 text-2xl font-bold leading-7;
+}
+.big-heading.white {
+  @apply text-white;
 }
 .small-heading {
   @apply uppercase text-indigo-500 text-sm font-bold;

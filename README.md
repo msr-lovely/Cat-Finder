@@ -25,9 +25,10 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 
 ## TODO
-- [ ] Landing Page Contact Me (Link back to melimeli.me)
-- [ ] Landing Page CSS BG
+- [x] Landing Page Contact Me (Link back to melimeli.me)
+- [x] Landing Page CSS BG
 - [ ] Landing Page Parallax
+- [ ] Landing Page Animation
 - [ ] Error Page
 
 
