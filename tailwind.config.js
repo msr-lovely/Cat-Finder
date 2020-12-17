@@ -35,6 +35,17 @@ module.exports = {
       boxShadow: {
         'logo-indigo': '0 8px 9px -6px rgba(102, 126, 234, 0.5)',
         'logo-indigo-big': '0 10px 25px 0 rgba(102, 126, 234, 0.5)',
+        'frontpage': '8px 8px 30px 0 rgba(49, 46, 129, 0.2)',
+        'frontpage-catWindow': '-8px 8px 30px 0 rgba(0,0,0,0.1)'
+      },
+      maxWidth: {
+        '2xs': '16rem'
+      },
+      fontSize: {
+        '2xs': '0.6rem'
+      },
+      padding: {
+        '1.5': '0.375rem'
       }
     }
   },

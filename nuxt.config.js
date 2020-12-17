@@ -19,7 +19,7 @@ export default {
     ],
     script: [
       {
-        // src: 'https://unpkg.com/vue-infinite-loading@^2/dist/vue-infinite-loading.js'
+        // src: 'https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js'
       }
     ],
   },
@@ -30,6 +30,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    { src: '~/plugins/vue-masonry' }
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -41,7 +42,7 @@ export default {
     // '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    ['@nuxtjs/google-fonts', { families: { Inter: true }}]
+    ['@nuxtjs/google-fonts', { families: { Inter: [400,500,700] }}]
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)

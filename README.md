@@ -24,16 +24,22 @@ $ npm run generate
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 
+## TODO
+- [] Landing Page Contact Me (Link back to melimeli.me)
+- [] Landing Page CSS BG
+- [] Landing Page Parallax
+- [] Error Page
+
 
 ## Credits
 
 - Made with [Nuxt](https://nuxtjs.org).
-- Cat Icon from [unDraw](https://undraw.co).
+- Illustrations from [unDraw](https://undraw.co).
 - Search bar auto-suggest by [vue-autosuggest](https://github.com/darrenjennings/vue-autosuggest).
 - Thumbnails Carousel by [Vue Carousel](https://github.com/SSENSE/vue-carousel).
 - List Infinite Loading by [vue-infinite-loading](https://github.com//PeachScript/vue-infinite-loading).
 - Lazyloading images by [lazysizes](https://github.com/aFarkas/lazysizes).
-- Free social media icons from [Simple Icons](http://simpleicons.org) and [Hero Icons](https://heroicons.dev).
+- Social media icons from [Simple Icons](http://simpleicons.org) and [Hero Icons](https://heroicons.dev).
 
 ### Backend: Cat Facts API
 https://alexwohlbruck.github.io/cat-facts/
