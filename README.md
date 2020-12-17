@@ -25,10 +25,10 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 
 ## TODO
-- [] Landing Page Contact Me (Link back to melimeli.me)
-- [] Landing Page CSS BG
-- [] Landing Page Parallax
-- [] Error Page
+- [ ] Landing Page Contact Me (Link back to melimeli.me)
+- [ ] Landing Page CSS BG
+- [ ] Landing Page Parallax
+- [ ] Error Page
 
 
 ## Credits
