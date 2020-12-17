@@ -24,10 +24,10 @@ body {
   @apply shadow-frontpage bg-radius-indigo;
 }
 .button {
-  @apply uppercase rounded-full font-bold px-6 py-2 border text-xs tracking-wider transition-colors duration-100 ease-in-out text-purple-500 border-purple-500;
+  @apply uppercase rounded-full font-bold px-6 py-2 border text-xs tracking-wider transition-colors duration-300 ease-in-out text-purple-500 border-purple-500;
 }
 .button.small {
-  @apply py-1.5 text-2xs;
+  @apply py-0.5 text-2xs;
 }
 .button:hover {
   @apply bg-purple-500 text-white;

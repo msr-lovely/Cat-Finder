@@ -11,7 +11,7 @@
 
             <div class="text-md flex-grow">
                 <!-- Breed Name -->
-                <NuxtLink :to="{name: 'breed', query: {name: encodeURI(breed.name)}}" class="font-semibold block hover:text-indigo-500 transition-colors duration-100 ease-in-out">
+                <NuxtLink :to="{name: 'breed', query: {name: encodeURI(breed.name)}}" class="font-semibold block hover:text-indigo-500 transition-colors duration-300 ease-in-out">
                     {{ breed.name }}
                 </NuxtLink>
 

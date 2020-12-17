@@ -7,7 +7,7 @@
                         <logo :frontpage="frontpage" />
                     </NuxtLink>
                     <div class="sm:ml-10 items-baseline space-x-4 nav flex">
-                        <NuxtLink to="/breed_list" :class="frontpage ? 'text-white hover:border-white' : 'text-gray-600 hover:text-gray-800'" class="transition-colors border border-transparent ease-in-out duration-100 sm:px-3 px-2 text-sm py-2 sm:my-3 my-2 rounded-md">Breeds</NuxtLink>
+                        <NuxtLink to="/breed_list" :class="frontpage ? 'text-white hover:border-white' : 'text-gray-600 hover:text-gray-800'" class="transition-colors border border-transparent ease-in-out duration-300 sm:px-3 px-2 text-sm py-2 sm:my-3 my-2 rounded-md">Breeds</NuxtLink>
                     </div>
                 </div>
 

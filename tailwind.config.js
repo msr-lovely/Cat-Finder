@@ -45,6 +45,7 @@ module.exports = {
         '2xs': '0.6rem'
       },
       padding: {
+        '0.5': '0.125rem',
         '1.5': '0.375rem'
       }
     }

@@ -1,6 +1,6 @@
 <template>
     <a :href="href" target="_blank">
-        <svg role="img" :class="size" class="transition-colors duration-100 ease-in-out text-gray-500 fill-current hover:text-indigo-500" :viewBox="viewBox" xmlns="http://www.w3.org/2000/svg">
+        <svg role="img" :class="size" class="transition-colors duration-300 ease-in-out text-gray-500 fill-current hover:text-indigo-500" :viewBox="viewBox" xmlns="http://www.w3.org/2000/svg">
             <slot></slot>
         </svg>
     </a>

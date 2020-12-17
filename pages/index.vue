@@ -5,13 +5,25 @@
     <!-- Begin 2nd Section -->
     <div class="text-center relative">
         <!-- BG LEFT -->
-        <img src="images/bg/BG_L_0.svg" class="absolute transform -translate-x-1/2 -translate-y-1/2" style="top:50%; left: 5vw;" />
-        <img src="images/bg/BG_Particle_0.svg" class="absolute" style="top:90%; left: 5vw;" />
+        <div class="absolute transform -translate-x-1/2 -translate-y-1/2" style="top:60%; left: 5vw;">
+            <img src="images/bg/BG_L_0.svg" data-rellax-speed="1" class="rellax" />
+        </div>
+        <div class="absolute" style="top:130%; left: 5vw;">
+            <img src="images/bg/BG_Particle_0.svg" data-rellax-speed="2" class="rellax" />
+        </div>
         <!-- BG RIGHT -->
-        <img src="images/bg/BG_Particle_1.svg" class="absolute" style="top:103%; right: 20vw;" />
-        <img src="images/bg/BG_Particle_2.svg" class="absolute" style="top:92%; right: 12vw;" />
-        <img src="images/bg/BG_R_0.svg" class="absolute transform translate-x-1/2 -translate-y-1/2" style="top:130%; right: -6vw;" />
-        <img src="images/bg/BG_R_1.svg" class="absolute transform -translate-y-1/2" style="top:122%; right: -4vw;" />
+        <div class="absolute transform translate-x-1/2 -translate-y-1/2" style="top:130%; right: -6vw;">
+            <img src="images/bg/BG_R_0.svg" data-rellax-speed="0" class="rellax" />
+        </div>
+        <div class="absolute transform -translate-y-1/2" style="top:142%; right: -4vw;">
+            <img src="images/bg/BG_R_1.svg" data-rellax-speed="1.5" class="rellax" />
+        </div>
+        <div class="absolute" style="top:133%; right: 20vw;">
+            <img src="images/bg/BG_Particle_1.svg" data-rellax-speed="0.8" class="rellax" />
+        </div>
+        <div class="absolute" style="top:142%; right: 12vw;">
+            <img src="images/bg/BG_Particle_2.svg" data-rellax-speed="2.5" class="rellax" />
+        </div>
         
         <div class="relative">
             <container>
@@ -28,18 +40,20 @@
             <div class="overflow-x-hidden">
                 <carousel :perPage="carouselPerPage" :pagination-enabled="false" class="ml-6 my-10">
                     <slide v-for="(breed, i) in breeds" :key="'card-' + i">
-                            <card class="w-56 mr-6 transition-transform transform hover:scale-105 duration-100" style="height: 17rem">
+                            <card class="carousel-card w-56 mr-6 transition-transform transform hover:scale-105 duration-300" style="height: 16rem">
                                 <div class="bg-indigo-500 h-32 bg-cover bg-center" :style="'background-image: url(' + breed.image + ')'"></div>
                                 <div class="mt-4 mb-2 text-indigo-500 font-bold text-sm">{{ breed.name }}</div>
-                                <p class="mb-4 text-gray-600 text-xs w-4/5 mx-auto">{{breed.temperament.split(', ').slice(0,5).join(', ')}}</p>
-                                <NuxtLink 
-                                    :to="{
-                                        name: 'breed', 
-                                        query: { name: encodeURI(breed.name) }
-                                    }" class="button gray small"
-                                >
-                                View
-                                </NuxtLink>
+                                <p class="mb-3 text-gray-600 text-xs w-4/5 mx-auto">{{breed.temperament.split(', ').slice(0,5).join(', ')}}</p>
+                                <div class="flex justify-center">
+                                    <NuxtLink 
+                                        :to="{
+                                            name: 'breed', 
+                                            query: { name: encodeURI(breed.name) }
+                                        }" class="carousel-link button gray small"
+                                    >
+                                    View
+                                    </NuxtLink>
+                                </div>
                             </card>
                     </slide>
                 </carousel>
@@ -56,29 +70,43 @@
     <!-- Section 3, left and right illustrations -->
     <container class="relative">
         <!-- BG LEFT -->
-        <img src="images/bg/BG_L_1.svg" class="absolute transform scale-50 rotate-180" style="top:22%; left: 12vw;" />
-        <img src="images/bg/BG_Particle_0.svg" class="absolute" style="top:48%; left: 3vw; transform: scale(4) rotate(180deg)" />
-        <img src="images/bg/BG_Particle_1.svg" class="absolute transform rotate-180" style="top:90%; left: 1vw;" />
+        <div class="absolute transform scale-50" style="top:32%; left: 12vw;">
+            <img src="images/bg/BG_L_1.svg" data-rellax-speed="1.2" class="rellax transform rotate-180" />
+        </div>
+        <div class="absolute transform scale-50 rellax" data-rellax-speed="1.5" style="top:72%; left: 12vw;">
+            <img src="images/bg/BG_Particle_0.svg" style="top:58%; left: 3vw; transform: scale(4) rotate(180deg)" />
+        </div>
+        <div class="absolute rellax" data-rellax-speed="1" style="top:90%; left: 1vw;">
+            <img src="images/bg/BG_Particle_1.svg" class="transform rotate-180" />
+        </div>
         <!-- BG RIGHT -->
-        <img src="images/bg/BG_Particle_1.svg" class="absolute transform rotate-90" style="top:40%; right: -1vw;" />
-        <img src="images/bg/BG_Particle_1.svg" class="absolute transform rotate-45" style="top:75%; right: 5vw;" />
+        <div class="absolute rellax" data-rellax-speed="2" style="top:80%; right: -1vw;">
+            <img src="images/bg/BG_Particle_1.svg" class="transform rotate-90" />
+        </div>
+        <div class="absolute rellax" data-rellax-speed="3" style="top:135%; right: 5vw;">
+            <img src="images/bg/BG_Particle_1.svg" class="transform rotate-45" />
+        </div>
 
-        <div class="relative">
+        <div class="relative z-10">
             <div class="grid grid-cols-2 sm:text-left text-center gap-8 sm:gap-0">
                 <div class="sm:flex sm:items-center sm:col-span-1 col-span-2">
-                    <img src="images/Chilling.svg" class="sm:w-4/5" />
+                    <img src="images/Chilling.svg" class="sm:w-4/5 sm:mx-0 mx-auto" />
                 </div>
                 <div class="sm:flex sm:items-center sm:col-span-1 col-span-2">
                     <div class="sm:max-w-xs md:max-w-sm">
                         <h6 class="small-heading">First Step</h6>
                         <div class="spacer"></div>
-                        <h3 class="big-heading">Enjoy the cats at the convenient of your own home</h3>
+                        <h3 class="big-heading">Enjoy the cats at the convenience of your own home</h3>
                         <div class="spacer"></div>
                         <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
 
                 <div class="col-span-2 spacer-4"></div>
+
+                <div class="sm:hidden col-span-2">
+                    <img src="images/Playful.svg" class="w-4/5 sm:mx-0 mx-auto" />
+                </div>
 
                 <div class="sm:flex sm:items-center sm:col-span-1 col-span-2">
                     <div class="sm:max-w-xs md:max-w-sm">
@@ -89,8 +117,8 @@
                         <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
-                <div class="sm:flex sm:items-center sm:col-span-1 col-span-2">
-                    <img src="images/Playful.svg" class="sm:w-4/5" />
+                <div class="hidden sm:flex sm:items-center sm:col-span-1 col-span-2">
+                    <img src="images/Playful.svg" class="w-4/5 sm:mx-0 mx-auto" />
                 </div>
             </div>
         </div>
@@ -104,7 +132,7 @@
 
             <!-- Load the photos -->
             <div v-masonry transition-duration="0.3s" gutter="24">
-                <img v-masonry-tile v-for="(image, i) in gallery" :key="i" :src="image" class="item rounded-xl shadow-frontpage max-w-xs mb-6 transition-transform transform duration-100 hover:scale-105" />
+                <img v-masonry-tile v-for="(image, i) in gallery" :key="i" :src="image" class="item rounded-xl shadow-frontpage max-w-xs mb-6 transition-transform transform duration-300 hover:scale-105" />
             </div>
         </div>
     </container>
@@ -114,7 +142,9 @@
     <!-- Section 4, Contact Me -->
     <container class="relative">
         <!-- BG RIGHT -->
-        <img src="images/bg/BG_R_0.svg" class="absolute" style="top:-3vh; right: -55vw; transform: rotate(135deg) translateY(50%)" />
+        <div class="rellax relative" data-rellax-speed="2">
+            <img src="images/bg/BG_R_0.svg" class="absolute" style="top:50vm; right: -55vw; transform: rotate(135deg) translateY(50%)" />
+        </div>
 
         <div class="relative bg-radius-indigo shadow-frontpage rounded-xl sm:flex sm:space-x-4 text-white mb-12 sm:text-left text-center">
             <div class="md:w-1/3 sm:w-1/2 text-center -mt-16 flex-shrink-0 hidden sm:block">
@@ -139,11 +169,19 @@
 import { Carousel, Slide } from 'vue-carousel';
 import Container from "@/components/Container";
 import Card from "@/components/frontpage/Card";
+import debounce from 'lodash/debounce'
 export default {
     layout: "frontpage",
     components: {
         Carousel, Slide,
         Card, Container
+    },
+    head: {
+        script: [
+            {
+                src: 'https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js'
+            }
+        ]
     },
     data() {
         return {
@@ -156,6 +194,11 @@ export default {
             return Math.ceil(window.innerWidth / 248) + 0.5;
         }
     },
+    updated: debounce(function () {
+        this.$nextTick(() => {
+            var rellax = new Rellax('.rellax'); 
+        })
+    }, 500),
     async mounted() {
         // load the gallery
         // let images = await this.$axios.$get('images/search', {
@@ -205,5 +248,12 @@ export default {
 }
 .VueCarousel-dot--active {
   @apply bg-indigo-500 !important;
+}
+
+.carousel-card .carousel-link {
+    @apply transition-all transform opacity-0 translate-y-2 block;
+}
+.carousel-card:hover .carousel-link {
+    @apply opacity-100 translate-y-0;
 }
 </style>
