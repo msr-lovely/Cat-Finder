@@ -157,12 +157,15 @@
                 <img src="images/Me.svg" class="mx-auto h-full" />
             </div>
             <div class="py-16">
-                <h2 class="big-heading mb-6 white">Need a Fullstack Developer?</h2>
+                <h2 class="big-heading mb-2 white">Need a Fullstack Developer?</h2>
                 <div>
-                    <div class="md:flex md:space-x-4 mb-4">
+                    <p class="text-gray-300 mb-4 sm:ml-0 mr-6 ml-6">
+                        Full Stack Web Developer with over 6 years of experience in all stages of web development, from planning to launch. Responsible for the launch of many commercial websites. Keeps up with new web technology. Open-minded, thrives in diversity, quick to adapt and able to work with or without direction.
+                    </p>
+                    <!-- <div class="md:flex md:space-x-4 mb-4">
                         <a class="button white block w-64 text-center md:mb-0 mb-4 sm:mx-0 mx-auto" :href="$config.myURL" target="_blank">View My Resume</a>
                         <a class="button white block w-64 text-center sm:mx-0 mx-auto" :href="$config.myURL" target="_blank">View Portfolio -></a>
-                    </div>
+                    </div> -->
                     <a :href="$config.contactUs" class="button white block w-64 text-center sm:mx-0 mx-auto">Contact Me</a>
                 </div>
             </div>
