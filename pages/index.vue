@@ -34,7 +34,7 @@
                     <div class="spacer"></div>
                     <h2 class="secondSection0 big-heading">Easily Searchable Cats<br />at Your Fingertips</h2>
                     <div class="spacer"></div>
-                    <p class="secondSection0 text-gray-600 md:w-3/4 mx-auto">This website is just a demo of NUXT/Vue static website. Please click any of the cats below to view each cat.</p>
+                    <p class="secondSection0 text-gray-600 md:w-3/4 mx-auto">This website is a demo of my NUXT/Vue static project.<br />Please click any of the cats below to view each cat.</p>
                 </div>
             </container>
 
@@ -100,9 +100,9 @@
                     <div class="sm:max-w-xs md:max-w-sm">
                         <h6 class="small-heading thirdSection0">First Step</h6>
                         <div class="spacer"></div>
-                        <h3 class="big-heading thirdSection0">Enjoy the cats at the convenience of your own home</h3>
+                        <h3 class="big-heading thirdSection0">Enjoy the cats</h3>
                         <div class="spacer"></div>
-                        <p class="text-gray-600 thirdSection0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="text-gray-600 thirdSection0">As you scroll down, pay attention to the background animation! Simple animations can bring life to your website's designs, creating excellent digital experiences.</p>
                     </div>
                 </div>
 
@@ -120,7 +120,7 @@
                         <div class="spacer"></div>
                         <h3 class="big-heading thirdSection1">Find all the cats!</h3>
                         <div class="spacer"></div>
-                        <p class="text-gray-600 thirdSection1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="text-gray-600 thirdSection1">Well-placed illustrations, easy-to-read typography, and harmonious color scheme improve are the soul of a great design.</p>
                     </div>
                 </div>
                 <div class="hidden sm:flex sm:items-center sm:col-span-1 col-span-2">
@@ -160,7 +160,7 @@
                 <h2 class="big-heading mb-2 white">Need a Fullstack Developer?</h2>
                 <div>
                     <p class="text-gray-300 mb-4 sm:ml-0 mr-6 ml-6">
-                        Full Stack Web Developer with over 6 years of experience in all stages of web development, from planning to launch. Responsible for the launch of many commercial websites. Keeps up with new web technology. Open-minded, thrives in diversity, quick to adapt and able to work with or without direction.
+                        Full Stack Web Developer with over 6 years of experience in all stages of web development, from planning to launch. Responsible for the launch of many commercial websites. Self-motivated and keeps up with new web technology.
                     </p>
                     <!-- <div class="md:flex md:space-x-4 mb-4">
                         <a class="button white block w-64 text-center md:mb-0 mb-4 sm:mx-0 mx-auto" :href="$config.myURL" target="_blank">View My Resume</a>
