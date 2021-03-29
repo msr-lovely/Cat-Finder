@@ -34,7 +34,7 @@
                     <div class="spacer"></div>
                     <h2 class="secondSection0 big-heading">Easily Searchable Cats<br />at Your Fingertips</h2>
                     <div class="spacer"></div>
-                    <p class="secondSection0 text-gray-600 md:w-3/4 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                    <p class="secondSection0 text-gray-600 md:w-3/4 mx-auto">This website is just a demo of NUXT/Vue static website. Please click any of the cats below to view each cat.</p>
                 </div>
             </container>
 
@@ -102,7 +102,7 @@
                         <div class="spacer"></div>
                         <h3 class="big-heading thirdSection0">Enjoy the cats at the convenience of your own home</h3>
                         <div class="spacer"></div>
-                        <p class="text-gray-600 thirdSection0">This website is just a demo of NUXT/Vue static website. Please click any of the cats below to view each cats.</p>
+                        <p class="text-gray-600 thirdSection0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
 
