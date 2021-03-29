@@ -3,20 +3,20 @@
     <div class="spacer-4"></div>
 
     <!-- Begin 2nd Section -->
-    <div class="text-center relative">
+    <div id="secondSection" class="text-center relative">
         <!-- BG LEFT -->
         <div class="absolute transform -translate-x-1/2 -translate-y-1/2" style="top:60%; left: 5vw;">
-            <img src="images/bg/BG_L_0.svg" data-rellax-speed="-1" class="rellax" />
+            <img src="images/bg/BG_L_0.svg" data-rellax-speed="-3" class="rellax" />
         </div>
         <div class="absolute" style="top:130%; left: 5vw;">
             <img src="images/bg/BG_Particle_0.svg" data-rellax-speed="2" class="rellax" />
         </div>
         <!-- BG RIGHT -->
         <div class="absolute transform translate-x-1/2 -translate-y-1/2" style="top:130%; right: -6vw;">
-            <img src="images/bg/BG_R_0.svg" data-rellax-speed="-2" class="rellax" />
+            <img src="images/bg/BG_R_0.svg" data-rellax-speed="-3" class="rellax" />
         </div>
         <div class="absolute transform -translate-y-1/2" style="top:142%; right: -4vw;">
-            <img src="images/bg/BG_R_1.svg" data-rellax-speed="-1" class="rellax" />
+            <img src="images/bg/BG_R_1.svg" data-rellax-speed="-1.5" class="rellax" />
         </div>
         <div class="absolute" style="top:133%; right: 20vw;">
             <img src="images/bg/BG_Particle_1.svg" data-rellax-speed="1" class="rellax" />
@@ -27,17 +27,21 @@
         
         <div class="relative">
             <container>
-                <h6 class="small-heading">Second Section</h6>
-                <div class="spacer"></div>
-                <h2 class="big-heading">Easily Searchable Cats<br />at Your Fingertips</h2>
-                <div class="spacer"></div>
-                <p class="text-gray-600 md:w-3/4 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                <div>
+                    <h6 class="secondSection0 small-heading">
+                        Second Section
+                    </h6>
+                    <div class="spacer"></div>
+                    <h2 class="secondSection0 big-heading">Easily Searchable Cats<br />at Your Fingertips</h2>
+                    <div class="spacer"></div>
+                    <p class="secondSection0 text-gray-600 md:w-3/4 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                </div>
             </container>
 
             <div class="spacer"></div>
 
             <!-- Begin gallery swipe! -->
-            <div class="overflow-x-hidden">
+            <div class="overflow-x-hidden carousel">
                 <carousel :perPage="carouselPerPage" :pagination-enabled="false" class="ml-6 my-10">
                     <slide v-for="(breed, i) in breeds" :key="'card-' + i">
                             <card class="carousel-card w-56 mr-6 transition-transform transform hover:scale-105 duration-300" style="height: 16rem">
@@ -70,17 +74,17 @@
     <!-- Section 3, left and right illustrations -->
     <container class="relative">
         <!-- BG LEFT -->
-        <div class="absolute transform scale-50" style="top:32%; left: 12vw;">
-            <img src="images/bg/BG_L_1.svg" data-rellax-speed="-1" class="rellax transform rotate-180" />
-        </div>
         <div class="absolute transform scale-50 rellax" data-rellax-speed="1.5" style="top:72%; left: 12vw;">
             <img src="images/bg/BG_Particle_0.svg" style="top:58%; left: 3vw; transform: scale(4) rotate(180deg)" />
+        </div>
+        <div class="absolute transform scale-50" style="top:32%; left: 12vw;">
+            <img src="images/bg/BG_L_1.svg" data-rellax-speed="-2" class="rellax transform rotate-180" />
         </div>
         <div class="absolute rellax" data-rellax-speed="1" style="top:90%; left: 1vw;">
             <img src="images/bg/BG_Particle_1.svg" class="transform rotate-180" />
         </div>
         <!-- BG RIGHT -->
-        <div class="absolute rellax" data-rellax-speed="-1" style="top:60%; right: -1vw;">
+        <div class="absolute rellax" data-rellax-speed="2" style="top:60%; right: -1vw;">
             <img src="images/bg/BG_Particle_1.svg" class="transform rotate-90" />
         </div>
         <div class="absolute rellax" data-rellax-speed="3" style="top:135%; right: 5vw;">
@@ -90,35 +94,37 @@
         <div class="relative z-10">
             <div class="grid grid-cols-2 sm:text-left text-center gap-8 sm:gap-0">
                 <div class="sm:flex sm:items-center sm:col-span-1 col-span-2">
-                    <img src="images/Chilling.svg" class="sm:w-4/5 sm:mx-0 mx-auto" />
+                    <img src="images/Chilling.svg" class="thirdSection0-img sm:w-4/5 sm:mx-0 mx-auto" />
                 </div>
-                <div class="sm:flex sm:items-center sm:col-span-1 col-span-2">
+                <div id="thirdSection0" class="sm:flex sm:items-center sm:col-span-1 col-span-2">
                     <div class="sm:max-w-xs md:max-w-sm">
-                        <h6 class="small-heading">First Step</h6>
+                        <h6 class="small-heading thirdSection0">First Step</h6>
                         <div class="spacer"></div>
-                        <h3 class="big-heading">Enjoy the cats at the convenience of your own home</h3>
+                        <h3 class="big-heading thirdSection0">Enjoy the cats at the convenience of your own home</h3>
                         <div class="spacer"></div>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="text-gray-600 thirdSection0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
 
                 <div class="col-span-2 spacer-4"></div>
 
+                <div id="thirdSection1" class="col-span-2"></div>
+
                 <div class="sm:hidden col-span-2">
-                    <img src="images/Playful.svg" class="w-4/5 sm:mx-0 mx-auto" />
+                    <img src="images/Playful.svg" class="thirdSection1-img0 w-4/5 sm:mx-0 mx-auto" />
                 </div>
 
-                <div class="sm:flex sm:items-center sm:col-span-1 col-span-2">
+                <div class="sm:flex sm:items-center sm:col-span-1 col-span-2 md:ml-10 ml-0">
                     <div class="sm:max-w-xs md:max-w-sm">
-                        <h6 class="small-heading">Second Step</h6>
+                        <h6 class="small-heading thirdSection1">Second Step</h6>
                         <div class="spacer"></div>
-                        <h3 class="big-heading">Find all the cats!</h3>
+                        <h3 class="big-heading thirdSection1">Find all the cats!</h3>
                         <div class="spacer"></div>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="text-gray-600 thirdSection1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
                 <div class="hidden sm:flex sm:items-center sm:col-span-1 col-span-2">
-                    <img src="images/Playful.svg" class="w-4/5 sm:mx-0 mx-auto" />
+                    <img src="images/Playful.svg" class="thirdSection1-img1 w-4/5 sm:mx-0 mx-auto" />
                 </div>
             </div>
         </div>
@@ -146,7 +152,7 @@
             <img src="images/bg/BG_R_0.svg" style="transform: rotate(135deg)" />
         </div>
 
-        <div class="relative bg-radius-indigo shadow-frontpage rounded-xl sm:flex sm:space-x-4 text-white mb-12 sm:text-left text-center">
+        <div id="fourthSection" class="relative bg-radius-indigo shadow-frontpage rounded-xl sm:flex sm:space-x-4 text-white mb-12 sm:text-left text-center">
             <div class="md:w-1/3 sm:w-1/2 text-center -mt-16 flex-shrink-0 hidden sm:block">
                 <img src="images/Me.svg" class="mx-auto h-full" />
             </div>
@@ -169,7 +175,7 @@
 import { Carousel, Slide } from 'vue-carousel';
 import Container from "@/components/Container";
 import Card from "@/components/frontpage/Card";
-import debounce from 'lodash/debounce'
+
 export default {
     layout: "frontpage",
     components: {
@@ -186,7 +192,8 @@ export default {
     data() {
         return {
             gallery: [],
-            breeds: []
+            breeds: [],
+            init: false,
         }
     },
     computed: {
@@ -194,12 +201,103 @@ export default {
             return Math.ceil(window.innerWidth / 248) + 0.5;
         }
     },
-    updated: debounce(function () {
-        this.$nextTick(() => {
-            var rellax = new Rellax('.rellax'); 
-        })
-    }, 500),
     async mounted() {
+        const gsap = this.$gsap;
+        const ScrollTrigger = this.$ScrollTrigger;
+        gsap.registerPlugin(ScrollTrigger);
+
+        let t = this;
+        let interval = setInterval(()=> {
+            if (!this.init && Rellax && gsap) {
+                var rellax = new Rellax('.rellax'); 
+                t.init = true;
+                clearInterval(interval);
+            }
+        }, 500);
+
+        gsap.timeline({scrollTrigger:{
+            trigger:"#secondSection",
+            start:"top 75%",
+            end:"bottom top",
+            toggleActions:"restart none none reset"
+        }})
+        .from('.secondSection0', {
+            y:'2rem',  
+            opacity: 0,
+            stagger:0.1, 
+            duration:0.3, 
+            ease:"back"
+        })
+        .from('.carousel', {
+            xPercent: 25,
+            opacity: 0,
+            duration:0.5, 
+            ease:"back"
+        })
+        .from('#secondSection .button', {
+            opacity: 0,
+            duration:0.3, 
+            ease:"in"
+        });
+
+        gsap.timeline({scrollTrigger:{
+            trigger:"#thirdSection0",
+            start:"top 75%",
+            end:"bottom top",
+            toggleActions:"restart none none reset"
+        }})
+        .from('.thirdSection0-img', {
+            x:'-2rem',  
+            opacity: 0,
+            duration:0.3, 
+            ease:"in"
+        })
+        .from('.thirdSection0', {
+            x:'2rem',  
+            opacity: 0,
+            stagger:0.3, 
+            duration:0.5, 
+            ease:"back"
+        });
+        gsap.timeline({scrollTrigger:{
+            trigger:"#thirdSection1",
+            start:"top 75%",
+            end:"bottom top",
+            toggleActions:"restart none none reset"
+        }})
+        .from('.thirdSection1-img0', {
+            y:'-2rem',  
+            opacity: 0,
+            duration:0.3, 
+            ease:"in"
+        })
+        .from('.thirdSection1', {
+            x:'2rem',  
+            opacity: 0,
+            stagger:0.3, 
+            duration:0.5, 
+            ease:"back"
+        })
+        .from('.thirdSection1-img1', {
+            x:'-2rem',  
+            opacity: 0,
+            stagger:0.3, 
+            duration:0.5, 
+            ease:"back"
+        });
+        gsap.timeline({scrollTrigger:{
+            trigger:"#fourthSection",
+            start:"top 75%",
+            end:"bottom top",
+            toggleActions:"restart none none reset"
+        }})
+        .from('#fourthSection', {
+            scaleX: .5,
+            opacity: 0,
+            duration:0.5, 
+            ease:"back"
+        });
+
         // load the gallery
         // let images = await this.$axios.$get('images/search', {
         //     params: {

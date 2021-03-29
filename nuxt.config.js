@@ -5,6 +5,11 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
+  
+  generate: {
+    fallback: true
+  },
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'Cat Finder',
@@ -41,6 +46,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     // '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
+    'nuxt-gsap-module',
     '@nuxtjs/tailwindcss',
     ['@nuxtjs/google-fonts', { families: { Inter: [400,500,700] }}]
   ],
@@ -58,6 +64,12 @@ export default {
     baseURL: process.env.CAT_API_URL,
     headers: {
       'x-api-key': process.env.API_KEY
+    }
+  },
+
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true
     }
   },
 

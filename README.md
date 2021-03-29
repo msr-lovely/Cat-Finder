@@ -28,8 +28,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - [x] ~~Landing Page Contact Me (Link back to melimeli.me)~~
 - [x] ~~Landing Page CSS BG~~
 - [x] ~~Landing Page Parallax~~
-- [ ] Landing Page Scroll Reveal Animation
-- [ ] Landing Page Text Fix
+- [x] Landing Page Scroll Reveal Animation
+- [x] Landing Page Text Fix
 - [x] ~~Error Page~~
 
 
@@ -43,8 +43,8 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 - Lazyloading images by [lazysizes](https://github.com/aFarkas/lazysizes).
 - Social media icons from [Simple Icons](http://simpleicons.org) and [Hero Icons](https://heroicons.dev).
 
-### Backend: Cat Facts API
-https://alexwohlbruck.github.io/cat-facts/
+### Backend: The Cat API
+https://thecatapi.com/
 
 ### Other Links
 - Kitten photo based on emojis: http://joshwcomeau.github.io/RequestKittensDocs/public/
