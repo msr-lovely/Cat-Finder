@@ -21,6 +21,8 @@ $ npm run start
 $ npm run generate
 ```
 
+Deploying to Netlify: https://nuxtjs.org/docs/2.x/deployment/netlify-deployment/ 
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 
