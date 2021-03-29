@@ -163,7 +163,7 @@
                         <a class="button white block w-64 text-center md:mb-0 mb-4 sm:mx-0 mx-auto" :href="$config.myURL" target="_blank">View My Resume</a>
                         <a class="button white block w-64 text-center sm:mx-0 mx-auto" :href="$config.myURL" target="_blank">View Portfolio -></a>
                     </div>
-                    <a :href="'mailto:'+$config.myEmail" class="button white block w-64 text-center sm:mx-0 mx-auto">Contact Me</a>
+                    <a :href="$config.contactUs" class="button white block w-64 text-center sm:mx-0 mx-auto">Contact Me</a>
                 </div>
             </div>
         </div>

@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     async infiniteHandler($state) {
-      console.log($state);
+      // console.log($state);
       this.$axios.get('breeds', {
         params: {
             limit: 5,

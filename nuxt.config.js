@@ -81,6 +81,7 @@ export default {
     catApiURL: process.env.CAT_API_URL,
     myURL: process.env.MY_URL,
     myEmail: process.env.MY_EMAIL,
+    contactUs: process.env.CONTACT_US,
     githubURL: process.env.GITHUB_URL,
     twitterURL: process.env.TWITTER_URL,
     linkedinURL: process.env.LINKEDIN_URL,
